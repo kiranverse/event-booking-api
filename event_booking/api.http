@@ -1,0 +1,27 @@
+###
+POST http://localhost:8000/api/auth/register/
+Content-Type: application/json
+
+{
+  "username": "kiran",
+  "email": "kiran@gmail.com",
+  "password": "test"
+}
+
+###
+POST http://localhost:8000/api/auth/login/
+Content-Type: application/json
+
+{
+  "username": "kiran",
+  "password": "test"
+}
+
+###
+POST http://localhost:8000/api/auth/token/
+Content-Type: application/json
+
+{
+  "username": "kiran",
+  "password": "test"
+}

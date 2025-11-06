@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "accounts",
     "events",
     "bookings",
+    'users',
     
 ]
 
@@ -130,3 +131,10 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 ASGI_APPLICATION = "event_booking.asgi.application"
+
+REST_FRAMEWORK = {
+  "DEFAULT_AUTHENTICATION_CLASSES": (
+    "rest_framework_simplejwt.authentication.JWTAuthentication",
+  ),
+}
+
